@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./data.js"></script>
+    <script type="module" src="./script.js" defer></script>
+    <title>Ripl Spell Checker</title>
+  </head>
+  <body>
+    <div class="content">
+      <form>
+        <label for="wordToCheck">Word to spellcheck:</label><br />
+        <input type="text" id="wordToCheck" name="wordToCheck" /><br />
+        <input type="submit" value="Submit" />
+      </form>
+      <p id="spellChecked"></p>
+    </div>
+  </body>
+</html>
