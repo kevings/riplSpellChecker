@@ -5,7 +5,7 @@ const form = document.getElementsByTagName("form")[0];
 
 // event listener to run our function when user hits Submit
 form.addEventListener("submit", function (event) {
-  let word = document.getElementById("wordToCheck").value;
+  const word = document.getElementById("wordToCheck").value;
   document.getElementById(
     "spellChecked"
   ).innerHTML = `The correct spelling is: ${checkWord(word)}`;
@@ -67,6 +67,6 @@ const checkWord = (wordToCheck) => {
     return noRepeatLettersMap.get(noRepeatLetters(lowered));
   }
 
-  // if incoming word is not in dictionary and cannot find the correction
+  // if incoming word is not in our set and maps
   return "No correction found";
 };
